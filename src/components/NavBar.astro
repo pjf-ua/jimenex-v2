@@ -1,0 +1,41 @@
+---
+import UpBar from "./UpBar.astro"
+import NavBarMobile from "./NavBarMobile.astro"
+---
+<header class="fixed w-full z-50 bg-white shadow-sm">
+    <UpBar />
+    <nav class="container mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-2xl font-['Pacifico'] text-primary">
+            <img src="/logo.webp" class="size-12 object-fill" alt="logo">
+        </a>
+        <div class="hidden md:flex items-center space-x-8">
+          <a href="#inicio" class="text-gray-700 hover:text-primary"
+            >Inicio</a
+          >
+          <a href="#servicios" class="text-gray-700 hover:text-primary"
+            >Servicios</a
+          >
+          <a href="#nosotros" class="text-gray-700 hover:text-primary"
+            >Nosotros</a
+          >
+          <a href="#testimonios" class="text-gray-700 hover:text-primary"
+            >Testimonios</a
+          >
+          <a href="#contacto" class="text-gray-700 hover:text-primary"
+            >Contacto</a
+          >
+          <button
+            class="bg-[#0F4C81] hover:bg-[#0d406c] text-white px-6 py-2 rounded-button rounded-lg hover:bg-opacity-90 transition-all cursor-pointer"
+          >
+            Consulta Gratuita
+          </button>
+        </div>
+        <div class="md:hidden">
+            <NavBarMobile />
+            
+
+        </div>
+      </div>
+    </nav>
+  </header>
