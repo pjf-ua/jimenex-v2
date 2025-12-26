@@ -8,31 +8,64 @@ import testimonios from '../data/testimonios.json'
         <h2
           class="text-4xl font-['Playfair_Display'] font-bold text-gray-900 mb-4"
         >
-          Lo Que Dicen Nuestros Clientes
+          ¿Por qué elegirnos?
         </h2>
         <p class="text-gray-600 max-w-2xl mx-auto">
-          La satisfacción de nuestros clientes es nuestro mejor aval
+          Descubre las ventajas de confiar en Gestoría Jiménez para el asesoramiento de tu negocio o asuntos personales
         </p>
       </div>
-      <div class="testimonial-slider">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonios.map((testimonio) => (
-            <div class="bg-white p-8 rounded-lg shadow-sm">
-                <div class="flex items-center mb-6">
-                <div
-                    class="w-12 h-12 bg-gray-200 bg-opacity-10 rounded-full flex items-center justify-center"
-                >
-                    <i class="ri-user-line text-[#0F4C81]"></i>
-                </div>
-                <div class="ml-4">
-                    <h4 class="font-semibold">{testimonio.nombre}</h4>
-                </div>
-                </div>
-                <p class="text-gray-600">
-                "{testimonio.reseña}"
-                </p>
-            </div>
-            ))}
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div
+          class="bg-white p-8 rounded-xl shadow-sm hover:shadow-blue-600 transition-shadow"
+        >
+          <div
+            class="w-16 h-16 bg-gray-200 bg-opacity-10 rounded-full flex items-center justify-center mb-6"
+          >
+            <i class="ri-bank-line text-[#0F4C81] text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Experiencia Profesional</h3>
+          <p class="text-gray-600 mb-6">
+            Más de 60 años asesorando a empresas y particulares con resultados excepcionales.
+          </p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-lg shadow-sm hover:shadow-blue-600 transition-shadow"
+        >
+          <div
+            class="w-16 h-16 bg-gray-200 bg-opacity-10 rounded-full flex items-center justify-center mb-6"
+          >
+            <i class="ri-bank-line text-[#0F4C81] text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Confianza y Seguridad</h3>
+          <p class="text-gray-600 mb-6">
+            Protección total de tus datos y cumplimiento normativo garantizado.
+          </p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-lg shadow-sm hover:shadow-blue-600 transition-shadow"
+        >
+          <div
+            class="w-16 h-16 bg-gray-200 bg-opacity-10 rounded-full flex items-center justify-center mb-6"
+          >
+            <i class="ri-scales-3-line text-[#0F4C81] text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Atención Personalizada</h3>
+          <p class="text-gray-600 mb-6">
+            Dedicamos el tiempo necesario para entender tus necesidades específicas.
+          </p>
+        </div>
+        <div
+          class="bg-white p-8 rounded-lg shadow-sm hover:shadow-blue-600 transition-shadow"
+        >
+          <div
+            class="w-16 h-16 bg-gray-200 bg-opacity-10 rounded-full flex items-center justify-center mb-6"
+          >
+            <i class="ri-line-chart-line text-[#0F4C81] text-2xl"></i>
+          </div>
+          <h3 class="text-xl font-semibold mb-4">Resultados Garantizados</h3>
+          <p class="text-gray-600 mb-6">
+            Compromiso con la excelencia y soluciones efectivas para tu negocio.
+          </p>
         </div>
       </div>
     </div>
