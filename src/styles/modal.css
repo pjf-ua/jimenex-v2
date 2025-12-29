@@ -1,0 +1,41 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 50;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  max-width: 520px;
+  width: 100%;
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+}
+
+.modal.active .modal-box {
+  transform: translateY(0);
+}
+
+.modal-box--wide {
+  max-width: 900px;
+  width: 95%;
+}
+
+.modal-content {
+  line-height: 1.7;
+}
+
